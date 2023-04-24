@@ -1,0 +1,50 @@
+.start-screen {
+    background-color: #404040;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        filter: blur(1px);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.headline {
+    position: absolute;
+    font-size: 100px;
+    color: rgba(255, 0, 0, 0.502);
+    padding: 16px;
+    border: 3px solid rgba(255, 0, 0, 0.35);
+    border-radius: 10px;
+    background-color: black;
+    top: 5%;
+}
+
+.start-label-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: black;
+    border: 3px solid rgba(255, 0, 0, 0.35);
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+
+    button {
+        font-size: 50px;
+        background: black;
+        color: rgba(255, 0, 0, 0.602);
+        border: 2px solid rgba(255, 0, 0, 0.35);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    &:hover {
+        filter: brightness(1.75);
+    }
+}
