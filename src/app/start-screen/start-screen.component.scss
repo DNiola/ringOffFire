@@ -11,6 +11,7 @@
         filter: blur(1px);
         width: 100vw;
         height: 100vh;
+        object-fit: cover;
     }
 }
 
@@ -23,6 +24,18 @@
     border-radius: 10px;
     background-color: black;
     top: 5%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 650px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: 25px;
+        height: 50px;
+    }
 }
 
 .start-label-box {
@@ -33,7 +46,6 @@
     border: 3px solid rgba(255, 0, 0, 0.35);
     border-radius: 10px;
     padding: 16px;
-    cursor: pointer;
 
     button {
         font-size: 50px;
@@ -42,7 +54,14 @@
         border: 2px solid rgba(255, 0, 0, 0.35);
         border-radius: 10px;
         padding: 10px;
+        cursor: pointer;
+
+        @media screen and (max-width: 650px) {
+            font-size: 20px;
+        }
     }
+
+
 
     &:hover {
         filter: brightness(1.75);
