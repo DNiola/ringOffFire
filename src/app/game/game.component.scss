@@ -2,10 +2,18 @@
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background-image: url("../../assets/img/board.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.boardIMG{
+        position: absolute;
+        max-height: 100vh;
+        max-width: 100vw;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
 }
 
 .card-stack {
